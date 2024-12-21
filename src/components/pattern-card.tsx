@@ -1,8 +1,9 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
+import { Badge } from "../components/ui/badge"
+import { Button } from "../components/ui/button"
 import { ArrowRight } from 'lucide-react'
-import Link from "next/link"
+import { Link } from "react-router-dom"
+import { cn } from "../lib/utils"
 
 interface PatternCardProps {
   title: string
@@ -33,7 +34,7 @@ export function PatternCard({ title, description, difficulty, category, slug }: 
       </CardHeader>
       <CardContent>
         <Button asChild className="w-full">
-          <Link href={`/patterns/${slug}`}>
+          <Link to={`/patterns/${slug}`}>
             Learn Pattern
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
