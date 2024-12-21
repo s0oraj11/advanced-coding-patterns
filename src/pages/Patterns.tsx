@@ -1,5 +1,5 @@
-import { Layout } from "@/components/layout"
-import { PatternCard } from "@/components/pattern-card"
+import { Layout } from "../components/layout"
+import { PatternCard } from "../components/pattern-card"
 
 const patterns = [
   {
@@ -23,10 +23,9 @@ const patterns = [
     category: "Structural",
     slug: "decorator"
   }
-  // Add more patterns as needed
 ]
 
-export default function PatternsPage() {
+export default function Patterns() {
   return (
     <Layout>
       <div className="space-y-6">
