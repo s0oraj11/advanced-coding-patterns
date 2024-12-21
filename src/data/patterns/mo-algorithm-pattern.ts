@@ -3,21 +3,21 @@ import { Pattern } from '../types';
 export const moAlgorithmPattern: Pattern = {
   id: 6,
   title: "MO's Algorithm Pattern",
-  description: "Handle offline range queries efficiently",
+  description: "Master MO's algorithm for efficient offline query processing and range-based problems.",
   questions: [
     {
       id: 1,
-      title: "Range Minimum Query",
-      difficulty: "hard",
-      link: "https://leetcode.com/problems/range-minimum-query/",
-      description: "Basic segment tree implementation"
+      title: "Range Sum Query - Mutable",
+      difficulty: "medium",
+      link: "https://leetcode.com/problems/range-sum-query-mutable/",
+      description: "Base Pattern: Square root decomposition. Key Operation: blocks[block_id] += diff"
     },
     {
       id: 2,
-      title: "Range Maximum Query",
+      title: "XOR Queries of a Subarray",
       difficulty: "medium",
-      link: "https://www.geeksforgeeks.org/segment-tree-set-1-range-minimum-query/",
-      description: "Differs by changing min to max"
+      link: "https://leetcode.com/problems/xor-queries-of-a-subarray/",
+      description: "Builds on #1: XOR property usage. Key Difference: XOR instead of sum"
     },
     {
       id: 3,

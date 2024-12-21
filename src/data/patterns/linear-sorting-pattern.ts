@@ -3,21 +3,21 @@ import { Pattern } from '../types';
 export const linearSortingPattern: Pattern = {
   id: 4,
   title: "Linear Sorting Pattern",
-  description: "Efficient sorting techniques for specific constraints",
+  description: "Master linear-time sorting techniques and their applications in solving complex problems.",
   questions: [
     {
       id: 1,
-      title: "Counting Sort",
+      title: "Height Checker",
       difficulty: "easy",
-      link: "https://leetcode.com/problems/counting-sort/",
-      description: "Base Pattern: Counting elements"
+      link: "https://leetcode.com/problems/height-checker/",
+      description: "Base Pattern: Fixed-range counting. Key Operation: count[height] += 1"
     },
     {
       id: 2,
-      title: "Radix Sort",
+      title: "Sort Colors",
       difficulty: "medium",
-      link: "https://leetcode.com/problems/radix-sort/",
-      description: "Builds on #1: Sorts based on digit positions"
+      link: "https://leetcode.com/problems/sort-colors/",
+      description: "Builds on #1: Three-pointer technique. Key Difference: One-pass partitioning"
     },
     {
       id: 3,

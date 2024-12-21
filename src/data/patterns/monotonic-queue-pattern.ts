@@ -3,21 +3,21 @@ import { Pattern } from '../types';
 export const monotonicQueuePattern: Pattern = {
   id: 2,
   title: "Monotonic Queue Pattern",
-  description: "Optimize sliding window operations with monotonic queues",
+  description: "Master the monotonic queue pattern for efficient sliding window operations and range queries.",
   questions: [
     {
       id: 1,
       title: "Sliding Window Maximum",
       difficulty: "hard",
       link: "https://leetcode.com/problems/sliding-window-maximum/",
-      description: "Find the maximum in each sliding window of size k"
+      description: "Base Pattern: Basic monotonic queue. Key Operation: while deque and nums[deque[-1]] < nums[i]: deque.pop()"
     },
     {
       id: 2,
-      title: "Max Consecutive Ones II",
-      difficulty: "medium",
-      link: "https://leetcode.com/problems/max-consecutive-ones-ii/",
-      description: "Find the longest subarray with at most one zero"
+      title: "Maximum Window Average",
+      difficulty: "easy",
+      link: "https://leetcode.com/problems/maximum-average-subarray-i/",
+      description: "Builds on #1: Changes to average calculation. Key Difference: Running sum maintenance"
     },
     {
       id: 3,

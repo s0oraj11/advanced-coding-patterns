@@ -3,21 +3,21 @@ import { Pattern } from '../types';
 export const simulationPattern: Pattern = {
   id: 3,
   title: "Simulation Pattern",
-  description: "Handle complex state changes and transitions",
+  description: "Learn to implement step-by-step simulation algorithms for complex problem-solving.",
   questions: [
     {
       id: 1,
-      title: "Simulate a Queue",
-      difficulty: "medium",
-      link: "https://leetcode.com/problems/design-a-queue/",
-      description: "Base Pattern: Implement a queue using an array"
+      title: "Array Transformation",
+      difficulty: "easy",
+      link: "https://leetcode.com/problems/array-transformation/",
+      description: "Base Pattern: In-place array updates. Key Operation: arr[i] = compare(arr[i-1], arr[i+1])"
     },
     {
       id: 2,
-      title: "Simulate a Stack",
-      difficulty: "medium",
-      link: "https://leetcode.com/problems/design-a-stack/",
-      description: "Base Pattern: Implement a stack using an array"
+      title: "Replace Elements with Greatest Right",
+      difficulty: "easy",
+      link: "https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/",
+      description: "Builds on #1: Directional scanning. Key Difference: Running maximum tracking"
     },
     {
       id: 3,
