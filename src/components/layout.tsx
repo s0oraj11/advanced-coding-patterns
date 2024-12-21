@@ -1,7 +1,7 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import Link from "next/link"
+import { cn } from "../lib/utils"
+import { Button } from "../components/ui/button"
+import { ScrollArea } from "../components/ui/scroll-area"
+import { Link } from "react-router-dom"
 import { Code2, BookOpen, GitFork, Home } from 'lucide-react'
 
 interface LayoutProps {
@@ -14,7 +14,7 @@ export function Layout({ children }: LayoutProps) {
       {/* Sidebar */}
       <div className="hidden lg:block w-64 border-r bg-muted/40">
         <div className="flex h-16 items-center border-b px-6">
-          <Link href="/" className="flex items-center gap-2 font-semibold">
+          <Link to="/" className="flex items-center gap-2 font-semibold">
             <Code2 className="h-6 w-6" />
             <span>Coding Patterns</span>
           </Link>
@@ -22,19 +22,19 @@ export function Layout({ children }: LayoutProps) {
         <ScrollArea className="h-[calc(100vh-4rem)] px-6 py-4">
           <nav className="space-y-2">
             <Button variant="ghost" className="w-full justify-start gap-2" asChild>
-              <Link href="/">
+              <Link to="/">
                 <Home className="h-4 w-4" />
                 Overview
               </Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start gap-2" asChild>
-              <Link href="/patterns">
+              <Link to="/patterns">
                 <GitFork className="h-4 w-4" />
                 Patterns
               </Link>
             </Button>
             <Button variant="ghost" className="w-full justify-start gap-2" asChild>
-              <Link href="/docs">
+              <Link to="/docs">
                 <BookOpen className="h-4 w-4" />
                 Documentation
               </Link>
