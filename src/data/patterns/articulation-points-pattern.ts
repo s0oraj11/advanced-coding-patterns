@@ -1,6 +1,6 @@
 import { Pattern } from '../types';
 
-export const articulationPointsAndBridgesPattern: Pattern = {
+export const articulationPointsPattern: Pattern = {
   id: 9,
   title: "Articulation Points and Bridges Pattern",
   description: "Learn to identify critical nodes and bridges in graphs whose removal would disconnect the graph, crucial for network reliability analysis.",
