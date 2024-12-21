@@ -1,10 +1,10 @@
-import { Layout } from "@/components/layout"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Layout } from "../components/layout"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
+import { Button } from "../components/ui/button"
 import { ArrowRight, BookOpen, GitFork, Users } from 'lucide-react'
-import Link from "next/link"
+import { Link } from "react-router-dom"
 
-export default function HomePage() {
+export default function Index() {
   return (
     <Layout>
       <div className="space-y-8">
@@ -15,13 +15,13 @@ export default function HomePage() {
           </p>
           <div className="flex gap-4">
             <Button size="lg" asChild>
-              <Link href="/patterns">
+              <Link to="/patterns">
                 Get Started
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/docs">View Documentation</Link>
+              <Link to="/docs">View Documentation</Link>
             </Button>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function HomePage() {
             </CardHeader>
             <CardContent>
               <Button variant="ghost" className="w-full" asChild>
-                <Link href="/patterns">Browse Patterns</Link>
+                <Link to="/patterns">Browse Patterns</Link>
               </Button>
             </CardContent>
           </Card>
@@ -52,7 +52,7 @@ export default function HomePage() {
             </CardHeader>
             <CardContent>
               <Button variant="ghost" className="w-full" asChild>
-                <Link href="/docs">Read Docs</Link>
+                <Link to="/docs">Read Docs</Link>
               </Button>
             </CardContent>
           </Card>
@@ -67,7 +67,7 @@ export default function HomePage() {
             </CardHeader>
             <CardContent>
               <Button variant="ghost" className="w-full" asChild>
-                <Link href="/community">Join Community</Link>
+                <Link to="/community">Join Community</Link>
               </Button>
             </CardContent>
           </Card>
